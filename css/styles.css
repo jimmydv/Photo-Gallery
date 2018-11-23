@@ -78,8 +78,7 @@ transition-property: all;
 
 footer{
     bottom: 0px;
-    width:80%;
-    max-width:960px ;
+    width: 80%;
     left: 10%;
     position: absolute;
     position: fixed!important;
