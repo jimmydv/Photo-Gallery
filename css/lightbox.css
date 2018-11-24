@@ -213,5 +213,8 @@ html.lb-disable-scrolling {
    .lightboxOverlay {
         opacity: 0.9;
     }
-  
+    .lightbox .lb-image {
+      border: 7px solid #fff;
+      border-style: ridge;
+ }
 }

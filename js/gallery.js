@@ -1,9 +1,4 @@
 
-
-
-
-
-
 // Select teh input field
 const searchBar = document.forms['search-box'].querySelector('#search');
 const gallery = document.querySelector('.gallery');
@@ -14,8 +9,8 @@ searchBar.addEventListener('keyup', function(event){
   const inputs = event.target.value.toLowerCase();
   const pics = gallery.getElementsByTagName('a');
   Array.from(pics).forEach((pic) =>{
-     const cap= pic.dataset.title;
-     if(cap.toLowerCase().indexOf(event.target.value)!= -1){
+     const cap= pic.dataset.title.toLocaleLowerCase();
+     if(cap.toLowerCase().indexOf(event.target.value.toLocaleLowerCase())!= -1){
        pic.style.display='block';
      }else{
        pic.style.display='none';

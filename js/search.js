@@ -1,1 +1,0 @@
-var searchBox, filter, ;
